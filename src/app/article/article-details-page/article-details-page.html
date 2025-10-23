@@ -1,0 +1,25 @@
+<article class="uk-article uk-container uk-padding">
+
+  <!--  Utilisation des informations de l'article récupéré dans le fichier .ts-->
+  <h1 class="uk-article-title">{{ article.title }}</h1>
+
+  <p class="uk-article-meta">Article rédigé par <a href="#">{{ article.author }}</a>. Posté sur le <a
+    href="/list">blog</a>
+  </p>
+
+  <p class="uk-text-baseline">{{ article.desc }}</p>
+  <!--  Condition de vérification de connexion-->
+  @if (this.authService.email()) {
+    <div class="uk-grid">
+      <div class="uk-padding uk-padding-remove-top">
+        <!--        Navigation avec le module router vers la modification en envoyant l'id de l'article-->
+        <a [routerLink]="['/modify', article.id]" class="uk-button uk-button-secondary">Modifier l'article</a>
+      </div>
+      <div class="uk-padding uk-padding-remove-top">
+        <!--        Idem pour supprimer l'article-->
+        <a [routerLink]="['/delete', article.id]" class="uk-button uk-button-secondary">Supprimer l'article</a>
+      </div>
+    </div>
+  }
+
+</article>
