@@ -1,0 +1,36 @@
+<form #connexionForm="ngForm" (ngSubmit)="tryConnexion()"
+      class="uk-position-center uk-form-stacked uk-width-1-2@m uk-margin-auto">
+
+  <div class="uk-margin">
+    <label class="uk-form-label" for="title">Email</label>
+    <div class="uk-form-controls">
+      <!--      Ici on utilise des input avec two way binds pour permettre d'ecrire en temps réel l'email et mot de passe de l'utilisateur. Pas obligatoire en production car les valeurs seront vide au démarrage.-->
+      <input [(ngModel)]="user.email" class="uk-input" id="title" name="title" required type="email">
+    </div>
+  </div>
+
+  <div class="uk-margin">
+    <label class="uk-form-label" for="desc">Password</label>
+    <div class="uk-form-controls">
+      <input [(ngModel)]="user.password" class="uk-input" id="desc" name="desc" required type="password">
+    </div>
+    <a class="uk-link-muted uk-text-small" href="/forgot-password">Forgot password ?</a>
+  </div>
+  <!--  Affiche la zone de message uniquement sous condition qu'il y ait un message d'erreur. -->
+  @if (outputErrorMessage) {
+    <div class="uk-alert-danger uk-margin uk-padding-small uk-border-rounded" uk-alert>
+      <div class="uk-flex uk-flex-middle uk-flex-between">
+        <div>
+          <strong>Erreur :</strong> {{ outputErrorMessage }}
+        </div>
+      </div>
+    </div>
+  }
+
+  <div class="uk-margin uk-position-relative uk-position-bottom-center">
+    <button [disabled]="!connexionForm.form.valid" class="uk-button uk-button-primary " type="submit">
+      Envoyer
+    </button>
+  </div>
+
+</form>

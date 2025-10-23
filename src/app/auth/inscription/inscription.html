@@ -1,0 +1,53 @@
+<form #signUpForm="ngForm" (ngSubmit)="createUser()"
+      class="uk-position-center uk-form-stacked uk-width-1-2@m uk-margin-auto uk-grid">
+
+  <div class="uk-margin">
+    <label class="uk-form-label" for="title">Email</label>
+    <div class="uk-form-controls">
+      <input [(ngModel)]="user.email" class="uk-input" id="email" name="email" required type="email">
+    </div>
+  </div>
+  <div class="uk-margin">
+    <label class="uk-form-label" for="desc">Password</label>
+    <div class="uk-form-controls">
+      <input [(ngModel)]="user.password" class="uk-input" id="password" name="password" required type="password">
+    </div>
+  </div>
+  <div class="uk-margin">
+    <label class="uk-form-label" for="title">Confirm Password</label>
+    <div class="uk-form-controls">
+      <input [(ngModel)]="user.passwordConfirm" class="uk-input" id="confirmPassword" name="confirmPassword" required
+             type="email">
+    </div>
+  </div>
+  <div class="uk-margin">
+    <label class="uk-form-label" for="title">Pseudonyme</label>
+    <div class="uk-form-controls">
+      <input [(ngModel)]="user.pseudo" class="uk-input" id="pseudo" name="pseudo" required type="email">
+    </div>
+  </div>
+  <div class="uk-margin">
+    <label class="uk-form-label" for="title">City code</label>
+    <div class="uk-form-controls">
+      <input [(ngModel)]="user.cityCode" class="uk-input" id="cityCode" name="cityCode" type="email">
+    </div>
+  </div>
+  <div class="uk-margin">
+    <label class="uk-form-label" for="title">City</label>
+    <div class="uk-form-controls">
+      <input [(ngModel)]="user.city" class="uk-input" id="city" name="city" type="email">
+    </div>
+  </div>
+  <div class="uk-margin">
+    <label class="uk-form-label" for="title">Phone number</label>
+    <div class="uk-form-controls">
+      <input [(ngModel)]="user.phone" class="uk-input" id="phone" name="phone" type="email">
+    </div>
+  </div>
+  <div class="uk-margin uk-position-relative uk-position-bottom-center">
+    <button [disabled]="!signUpForm.form.valid" class="uk-button uk-button-primary " type="submit">
+      Envoyer
+    </button>
+  </div>
+
+</form>
