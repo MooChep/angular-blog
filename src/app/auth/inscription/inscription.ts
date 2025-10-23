@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {AuthService} from '../services/auth-service';
+import {AuthService} from '../../services/auth-service';
 import {Router} from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
 

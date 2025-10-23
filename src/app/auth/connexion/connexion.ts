@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from '@angular/common/http';
-import {AuthService} from '../services/auth-service';
+import {AuthService} from '../../services/auth-service';
 import {ActivatedRoute, Router} from '@angular/router';
 
 //Typage pour le message de connexion en cas d'erreurs

@@ -1,8 +1,8 @@
 import {Component} from '@angular/core';
 import {ActivatedRoute, Router, RouterLink} from '@angular/router';
-import {Article, ArticleService} from '../services/article-service';
+import {Article, ArticleService} from '../../services/article-service';
 import {HttpClientModule} from '@angular/common/http';
-import {AuthService} from '../../auth/services/auth-service';
+import {AuthService} from '../../services/auth-service';
 
 @Component({
   selector: 'app-article-details-page',

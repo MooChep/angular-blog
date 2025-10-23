@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {Article, ArticleService} from '../services/article-service';
+import {Article, ArticleService} from '../../services/article-service';
 import {ActivatedRoute, Router} from '@angular/router';
 import {FormsModule} from '@angular/forms';
 import {CommonModule} from '@angular/common';

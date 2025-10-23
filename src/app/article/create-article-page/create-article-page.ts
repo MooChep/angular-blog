@@ -1,9 +1,9 @@
 import {Component} from '@angular/core';
-import {Article, ArticleService} from '../services/article-service';
+import {Article, ArticleService} from '../../services/article-service';
 import {Router} from '@angular/router';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
-import {AuthService} from '../../auth/services/auth-service';
+import {AuthService} from '../../services/auth-service';
 
 @Component({
   selector: 'app-create-article-page',

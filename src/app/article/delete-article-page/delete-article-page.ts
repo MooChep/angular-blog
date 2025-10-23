@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {ArticleService} from '../services/article-service';
+import {ArticleService} from '../../services/article-service';
 import {ActivatedRoute, Router} from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
 

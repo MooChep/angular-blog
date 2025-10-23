@@ -5,7 +5,7 @@ import {ForgotPassword} from './auth/forgot-password/forgot-password';
 import {ArticleDetailsPage} from './article/article-details-page/article-details-page';
 import {DeleteArticlePage} from './article/delete-article-page/delete-article-page';
 import {ModifyArticlePage} from './article/modify-article-page/modify-article-page';
-import {MainPage} from './main-page/main-page';
+import {MainPage} from './article/main-page/main-page';
 import {CreateArticlePage} from './article/create-article-page/create-article-page';
 import {Logout} from './auth/logout/logout';
 import {ConfirmationPage} from './article/confirmation-page/confirmation-page';

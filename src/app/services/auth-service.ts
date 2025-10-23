@@ -1,9 +1,9 @@
 import {Injectable, signal} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
-import {LoginForm} from '../connexion/connexion';
-import {SingUpForm} from '../inscription/inscription';
-import {ResetPasswordForm} from '../forgot-password/forgot-password';
+import {LoginForm} from '../auth/connexion/connexion';
+import {SingUpForm} from '../auth/inscription/inscription';
+import {ResetPasswordForm} from '../auth/forgot-password/forgot-password';
 
 @Injectable({
   providedIn: 'any'
